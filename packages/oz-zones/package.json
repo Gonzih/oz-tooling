@@ -1,0 +1,25 @@
+{
+  "name": "@gonzih/oz-zones",
+  "version": "1.0.0",
+  "description": "MCP server for Opportunity Zone eligibility lookup and census tract data",
+  "main": "dist/index.js",
+  "bin": {
+    "oz-zones": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["mcp", "opportunity-zone", "census", "fips", "qrof"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  }
+}

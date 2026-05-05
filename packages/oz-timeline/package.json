@@ -1,0 +1,25 @@
+{
+  "name": "@gonzih/oz-timeline",
+  "version": "1.0.0",
+  "description": "MCP server for OZ deadlines, investment windows, and nomination schedules",
+  "main": "dist/index.js",
+  "bin": {
+    "oz-timeline": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["mcp", "opportunity-zone", "deadlines", "oz2", "timeline"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  }
+}
