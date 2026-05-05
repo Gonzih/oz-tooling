@@ -1,0 +1,31 @@
+{
+  "name": "@gonzih/oz-calc",
+  "version": "1.0.0",
+  "description": "MCP server for Opportunity Zone tax benefit calculations (OZ 1.0 and OZ 2.0)",
+  "main": "dist/index.js",
+  "bin": {
+    "oz-calc": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "mcp",
+    "opportunity-zone",
+    "tax",
+    "qof",
+    "oz"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^5.0.0"
+  }
+}

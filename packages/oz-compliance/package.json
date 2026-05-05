@@ -1,0 +1,25 @@
+{
+  "name": "@gonzih/oz-compliance",
+  "version": "1.0.0",
+  "description": "MCP server for QOF compliance tracking — 90% asset test, QOZB eligibility, reporting requirements",
+  "main": "dist/index.js",
+  "bin": {
+    "oz-compliance": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["mcp", "opportunity-zone", "qof", "compliance", "90pct-test"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  }
+}
